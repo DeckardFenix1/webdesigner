@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="container">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>
+      The Walking Dead Survey Form
+    </title>
+  </head>
+
+  <body>
+    <h1 id="title">
+      The Walking Dead Survey Form
+      </h1>
+    <p id="description">
+    A survey about the tv show The Walking Dead
+    </p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name
+        </label>
+        <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+        />
+      </div>
+      <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+      </div>
+      <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div><div class="form-group">
+      <p>What is your favorite character?</p>
+      <select id="dropdown" name="char" class="form-control" required>
+        <option disabled selected value>Characters</option>
+        <option value="rick">Rick Grimes</option>
+        <option value="shane">Shane Walsh</option>
+        <option value="daryl">Daryl Dixon</option>
+        <option value="glenn">Glenn Rhee</option>
+        <option value="negan">Negan</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>What "ERA" do you like the most?</p>
+      <label>
+        <input
+          name="era"
+          value="s1-4"
+          type="radio"
+          class="input-radio"
+          checked
+        />Season 1-4</label
+      >
+      <label>
+        <input
+          name="era"
+          value="s5-8"
+          type="radio"
+          class="input-radio"
+        />Season 5-8</label
+      >
+
+      <label
+        ><input
+          name="era"
+          value="s9-11"
+          type="radio"
+          class="input-radio"
+        />Season 9-11</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite TWD villain?
+      </p>
+      <select id="villain" name="Villain" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="governor">The Governor</option>
+        <option value="alpha">Alpha</option>
+        <option value="negan">Negan</option>
+        <option value="walkers">Walkers</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Who would you like to resurrect?
+        <span class="clue">(You can choose more than one)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="carl"
+          type="checkbox"
+          class="input-checkbox"
+        />Carl Grimes</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="shanewalsh"
+          type="checkbox"
+          class="input-checkbox"
+        />Shane Walsh</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="glennrhee"
+          type="checkbox"
+          class="input-checkbox"
+        />Glenn Rhee</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="hershel"
+          type="checkbox"
+          class="input-checkbox"
+        />Hershel Greene</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="jesus"
+          type="checkbox"
+          class="input-checkbox"
+        />Paul "Jesus" Monroe</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="abraham"
+          type="checkbox"
+          class="input-checkbox"
+        />Abraham Ford</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="simon"
+          type="checkbox"
+          class="input-checkbox"
+        />Simon</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="sasha"
+          type="checkbox"
+          class="input-checkbox"
+        />Sasha Williams</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="enid"
+          type="checkbox"
+          class="input-checkbox"
+        />Enid</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="tara"
+          type="checkbox"
+          class="input-checkbox"
+        />Tara Chambler</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="all"
+          type="checkbox"
+          class="input-checkbox"
+        />All of them</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments about the show's plot?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+    </form>
+    </div>
+  </body>
+</html>
